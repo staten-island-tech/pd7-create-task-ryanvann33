@@ -10,14 +10,12 @@
       <div class="bg-wraf"> 
 
     <h1>Meme Generator</h1>
-  </div>
-</div>
-<div>
-<label class="text" for="location">Enter Top Text</label> <input type="text" id="pokemonId" name="location">
-
-
-</div>
-
-  <body></body>
-  <script type="module" src="index.js"></script>
-</html>
+    <div class="container">
+      
+      <input type="text" id="top-text" placeholder="Enter top text">
+      <input type="text" id="bottom-text" placeholder="Enter bottom text">
+      <input type="file" id="image-input">
+      <button onclick="generateMeme()">Generate Meme</button>
+      <div id="meme-container"></div>
+    </div>
+    <script type="module" src="index.js"></script>
