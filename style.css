@@ -3,10 +3,12 @@ body{
 }
 
 h1{
-    margin-left: 4rem;
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
     font-family: sans-serif;
     color: white;
+    text-shadow: 2px 2px 8px black;
+    
 }
 
 .container {
@@ -31,3 +33,4 @@ button {
     padding: 10px;
     font-size: 16px;
 }
+
