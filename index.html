@@ -4,18 +4,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-    <head>
-    <div class="container">
-      <div class="bg-wraf"> 
-
-    <h1>Meme Generator</h1>
-    <div class="container">
-      
-      <input type="text" id="top-text" placeholder="Enter top text">
-      <input type="text" id="bottom-text" placeholder="Enter bottom text">
-      <input type="file" id="image-input">
-      <button onclick="generateMeme()">Generate Meme</button>
-      <div id="meme-container"></div>
+    <script src="index.js"></script>
+    
+    <div>
+      <h1>Create Your Own Meme</h1>
+      <form>
+        <label for="topText">Top Text:</label>
+        <input type="text" id="topText" name="topText"><br>
+    
+        <label for="bottomText">Bottom Text:</label>
+        <input type="text" id="bottomText" name="bottomText"><br>
+    
+        <label for="imageURL">Image URL:</label>
+        <input type="text" id="imageURL" name="imageURL"><br>
+    
+        <button type="button" onclick="generateMeme()">Generate Meme</button>
+      </form>
+    
+      <div id="memeContainer">
+        <img id="memeImage" src="">
+        <div id="topTextContainer"></div>
+        <div id="bottomTextContainer"></div>
+      </div>
     </div>
-    <script type="module" src="index.js"></script>
